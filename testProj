@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner consol = new Scanner(System.in);
+        System.out.println("Вітаю! Яка ціна на біткоін сьогодні?");
+        int bitPrice = consol.nextInt();
+        System.out.println("Ціна на біткоін: $" + bitPrice);
+        System.out.println("Скільки $ є у вас?");
+        int dolCount = consol.nextInt();
+        System.out.println("У вас: $" + dolCount);
+        double countBit = (double) dolCount / bitPrice;
+        System.out.println(String.format("Ви можете придбати: %.6f"+" BTC",countBit));
+    }
+}
